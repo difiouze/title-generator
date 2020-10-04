@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Title = ({ title, playlist, setPlayslist }) => {
+const Title = ({ title, playlist, setPlaylist }) => {
 
     const addToPlaylist = () => {
-        setPlayslist([...playlist, title]);
+        setPlaylist([...playlist, title]);
       }
     
 

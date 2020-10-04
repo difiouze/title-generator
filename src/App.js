@@ -9,7 +9,7 @@ import './App.css';
 function App() {
 
   const [title, setTitle] = useState([]);
-  const [playlist, setPlayslist] = useState([]);
+  const [playlist, setPlaylist] = useState([]);
 
   const randomTitle = () => {
     setTitle([{
@@ -25,8 +25,8 @@ function App() {
     <div className="App">
       <h1>Click to generate a title </h1>
       <button onClick={randomTitle}>Random Title !</button>
-      <Title title={title} playlist={playlist} setPlayslist={setPlayslist}/>
-      <Playlist playlist={playlist} setPlayslist={setPlayslist} title={title}/>
+      <Title title={title} playlist={playlist} setPlaylist={setPlaylist}/>
+      <Playlist playlist={playlist} setPlaylist={setPlaylist}/>
     </div>
   );
 }

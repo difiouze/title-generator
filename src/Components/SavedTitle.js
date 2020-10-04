@@ -4,9 +4,13 @@ const SavedTitle = ({ playlist }) => {
 
     return (
         <div>
-            {playlist.map(newItem => (
-                <div key={newItem.key}>
-                    <h1> {newItem.subject} {newItem.verb} {newItem.complement}</h1>
+            {playlist.map(item => (
+                <div>
+                    {item.map(newTitle => (
+                        <div key={newTitle.key}>
+                            <h1> {newTitle.subject} {newTitle.verb} {newTitle.complement}</h1>
+                        </div>
+                    ))}
                 </div>
             ))}
         </div>

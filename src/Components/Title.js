@@ -3,7 +3,6 @@ import React from 'react'
 const Title = ({ title, playlist, setPlayslist }) => {
 
     const addToPlaylist = () => {
-        //Object.fromEntries(data);
         setPlayslist([...playlist, title]);
       }
     

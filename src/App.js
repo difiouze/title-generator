@@ -23,8 +23,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Click to generate a title </h1>
-      <button onClick={randomTitle}>Random Title !</button>
+      <h1 className='main-title'>Click to generate a title </h1>
+      <button className='btnmain' onClick={randomTitle}>Random Title!</button>
       <Title title={title} playlist={playlist} setPlaylist={setPlaylist}/>
       <Playlist playlist={playlist} setPlaylist={setPlaylist}/>
     </div>

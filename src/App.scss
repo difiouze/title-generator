@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+    font-family: "Lato", sans-serif;
+}
+
+.App {
+    padding: 20px;
+    text-align: center;
+}
+
+%btn {
+    border-radius: 3px;
+    padding: 0 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+}
+
+.btnmain {
+    @extend %btn;
+}
+
+.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.playlist-item {
+    &__container {
+    }
+
+    &__item {
+        padding: 20px;
+        margin: 10px auto;
+        border: 1px solid #000;
+    }
+}

@@ -3,13 +3,11 @@ import React from 'react'
 const SavedTitle = ({ playlist }) => {
 
     return (
-        <div>
+        <div className='playlist-item__container'>
             {playlist.map(item => (
-                <div>
+                <div className='playlist-item__item'>
                     {item.map(newTitle => (
-                        <div key={newTitle.key}>
-                            <h1> {newTitle.subject} {newTitle.verb} {newTitle.complement}</h1>
-                        </div>
+                        <span key={newTitle.key}> {newTitle.subject} {newTitle.verb} {newTitle.complement}</span>
                     ))}
                 </div>
             ))}

@@ -1,9 +1,13 @@
 import React from 'react'
+import SavedTitle from './SavedTitle'
 
-const Playlist = () => {
+
+const Playlist = ({playlist}) => {
     return (
         <div>
-            
+            <SavedTitle playlist={playlist}/>
+
+
         </div>
     )
 }

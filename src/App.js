@@ -9,10 +9,11 @@ import './App.css';
 function App() {
 
   const [title, setTitle] = useState([]);
+  const [playlist, setPlayslist] = useState([]);
 
   const randomTitle = () => {
     setTitle([{
-      key: title.length,
+      key: Math.random() * 1000,
       subject: numbers[Math.floor(Math.random() * numbers.length)],
       verb: days[Math.floor(Math.random() * days.length)],
       complement: months[Math.floor(Math.random() * months.length)],
@@ -23,9 +24,9 @@ function App() {
   return (
     <div className="App">
       <h1>Click to generate a title </h1>
-      <Title title={title}/>
       <button onClick={randomTitle}>Random Title !</button>
-      <Playlist />
+      <Title title={title} playlist={playlist} setPlayslist={setPlayslist}/>
+      <Playlist playlist={playlist} setPlayslist={setPlayslist} title={title}/>
     </div>
   );
 }

@@ -1,11 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 
-const Title = ({ title }) => {
-    const [playlist, setPlayslist] = useState([]);
+const Title = ({ title, playlist, setPlayslist }) => {
 
     const addToPlaylist = () => {
-        console.log("Hello");
-        setPlayslist(...playlist, title);
+        //Object.fromEntries(data);
+        setPlayslist([...playlist, title]);
       }
     
 
@@ -16,9 +15,11 @@ const Title = ({ title }) => {
                     <h1> {newTitle.subject} {newTitle.verb} {newTitle.complement}</h1>
                     <button onClick= {addToPlaylist}>Add to playlist</button>
                 </div>
-            ))}
+            ))} 
         </div>
     )
 }
 
 export default Title
+
+

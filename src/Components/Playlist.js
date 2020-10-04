@@ -9,8 +9,10 @@ const resetPlaylist = () => {
 }
 
     return (
-        <div>
-            <button onClick={resetPlaylist}>Reset Playlist</button>
+        <div className='playlist__container'>
+            <h3 className='playlist__title'>Item Saved:</h3>
+            {playlist.length ? <button className='btnmain' onClick={resetPlaylist}>Reset Playlist</button> : <span>No item saved yet!</span> }
+            
             <SavedTitle playlist={playlist}/>
         </div>
     )

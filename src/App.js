@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import numbers from './Utils/Numbers';
 import days from './Utils/Days';
 import months from './Utils/Months';
@@ -25,8 +25,14 @@ function App() {
     <div className="App">
       <h1 className='main-title'>Click to generate a title </h1>
       <button className='btnmain' onClick={randomTitle}>Random Title!</button>
-      <Title title={title} playlist={playlist} setPlaylist={setPlaylist}/>
-      <Playlist playlist={playlist} setPlaylist={setPlaylist}/>
+      <div className='main-wrapper'>
+        <div className='main-wrapper__video'>
+          <Title title={title} playlist={playlist} setPlaylist={setPlaylist} />
+        </div>
+        <div className='main-wrapper__playlist'>
+          <Playlist playlist={playlist} setPlaylist={setPlaylist} />
+        </div>
+      </div>
     </div>
   );
 }

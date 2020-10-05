@@ -5,9 +5,10 @@ const SavedTitle = ({ playlist }) => {
     return (
         <div className='playlist-item__container'>
             {playlist.map(item => (
-                <div className='playlist-item__item'>
+                <div key={Math.random() * 1000} className='playlist-item__item'>
+                     <div className='playlist-item__thumb'></div>
                     {item.map(newTitle => (
-                        <span key={newTitle.key}> {newTitle.subject} {newTitle.verb} {newTitle.complement}</span>
+                        <div key={newTitle.key}> {newTitle.subject} {newTitle.verb} {newTitle.complement}</div>
                     ))}
                 </div>
             ))}

@@ -23,9 +23,51 @@
   font-weight: 500;
 }
 
+.main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 80px;
+}
+
+.main-wrapper__video {
+  max-width: 75%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+}
+
+.main-wrapper__playlist {
+  max-width: 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.playlist-item__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.playlist-item__thumb {
+  width: 100%;
+  max-width: 120px;
+  border: 1px solid black;
+  min-height: 100px;
+}
+
 .playlist-item__item {
-  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
   margin: 10px auto;
   border: 1px solid #000;
+  width: 100%;
 }
 /*# sourceMappingURL=App.css.map */

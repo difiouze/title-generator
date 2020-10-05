@@ -28,13 +28,39 @@
     font-weight: 500;
 }
 
+.main-wrapper {
+    display: flex;
+    padding: 0 80px;
+
+    &__video {
+        max-width: 75%;
+        flex: 0 0 75%;
+    }
+
+    &__playlist {
+        max-width: 25%;
+        flex: 0 0 25%;
+    }
+}
+
 .playlist-item {
     &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__thumb {
+        width: 100%;
+        max-width: 120px;
+        border: 1px solid black;
+        min-height: 100px;
     }
 
     &__item {
-        padding: 20px;
+        display: flex;
+        padding: 10px;
         margin: 10px auto;
         border: 1px solid #000;
+        width: 100%;
     }
 }

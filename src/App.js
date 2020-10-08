@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import numbers from './Utils/Numbers';
 import days from './Utils/Days';
 import months from './Utils/Months';
+import images from './Utils/Images'
 import Title from './Components/Title';
 import Playlist from './Components/Playlist';
 import './App.css';
@@ -17,6 +18,7 @@ function App() {
       subject: numbers[Math.floor(Math.random() * numbers.length)],
       verb: days[Math.floor(Math.random() * days.length)],
       complement: months[Math.floor(Math.random() * months.length)],
+      image: images[Math.floor(Math.random() * images.length)],
     }
     ]);
   };

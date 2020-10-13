@@ -38,6 +38,23 @@
           flex: 0 0 75%;
 }
 
+.main-wrapper__video-item {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-wrapper__video-item:after {
+  content: url("/img/youtube-control.jpg");
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 500px;
+}
+
 .main-wrapper__playlist {
   max-width: 25%;
   -webkit-box-flex: 0;

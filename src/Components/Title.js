@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Title = ({ title, playlist, setPlaylist }) => {
+const Title = ({ title, itemSaved, setItemSaved }) => {
 
-    const addToPlaylist = () => {
-        setPlaylist([...playlist, title]);
+    const addToPlaylist = (title) => {
+        setItemSaved([...itemSaved, title[0]]);
+
     }
 
     return (
@@ -15,7 +16,7 @@ const Title = ({ title, playlist, setPlaylist }) => {
                 </div>
             ))}
 
-            {title.length ? <button className='btnmain' onClick= {addToPlaylist}>Add to playlist</button> : <div></div>}
+            {title.length ? <button className='btnmain' onClick= {() => addToPlaylist(title)}>Add to playlist</button> : <div></div>}
         </>
     )
 }
